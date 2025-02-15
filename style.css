@@ -45,6 +45,33 @@ body {
    color: #fff;
 }
 
+/*Navigation*/
+nav {
+   height: 7vh;
+   font-size: 1rem;
+   background-color: #1a1a1a;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+
+nav a {
+   height: 100%;
+   padding: 0 20px;
+   display: flex;
+   align-items: center;
+   font-family: "Inter", sans-serif;
+   text-decoration: none;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+nav a:hover {
+   color: var(--cta-color);
+   transition: 0.2s ease-in-out;
+}
+
 /*Für die Hero-Section die Elemente zentrieren*/
 .hero {
    position: relative; /*warten: wird ev. gelöscht*/
@@ -52,7 +79,9 @@ body {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: 100vh; /*Die Hero-Section soll die gesamte Bildschirmhöhe einnehmen*/
+   height: calc(
+      100vh - 7vh
+   ); /*Die Hero-Section soll die gesamte Bildschirmhöhe einnehmen*/
    text-align: center;
    background-image: var(--hero-background);
    background-size: cover; /*Skalierung auf die gesamte Hero-Section-Fläche*/
