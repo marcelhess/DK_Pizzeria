@@ -46,9 +46,9 @@ body {
 }
 
 /*Navigation*/
-nav {
-   height: 7vh;
-   font-size: 1rem;
+.nav {
+   height: 8vh;
+   font-size: 0.8rem;
    background-color: #1a1a1a;
    display: flex;
    justify-content: center;
@@ -56,18 +56,19 @@ nav {
    text-align: center;
 }
 
-nav a {
+.nav a {
    height: 100%;
    padding: 0 20px;
    display: flex;
    align-items: center;
    font-family: "Inter", sans-serif;
+   letter-spacing: 0.1rem;
    text-decoration: none;
    text-transform: uppercase;
    color: #fff;
 }
 
-nav a:hover {
+.nav a:hover {
    color: var(--cta-color);
    transition: 0.2s ease-in-out;
 }
@@ -79,9 +80,7 @@ nav a:hover {
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   height: calc(
-      100vh - 7vh
-   ); /*Die Hero-Section soll die gesamte Bildschirmhöhe einnehmen*/
+   height: 92vh; /*Die Hero-Section soll die gesamte Bildschirmhöhe einnehmen*/
    text-align: center;
    background-image: var(--hero-background);
    background-size: cover; /*Skalierung auf die gesamte Hero-Section-Fläche*/
@@ -138,7 +137,13 @@ nav a:hover {
    color: var(--cta-color);
 }
 
+/*Media-Queries*/
 @media only screen and (min-width: 600px) {
+   .nav {
+      gap: 2rem;
+      font-size: 1rem;
+   }
+
    .hero-titel {
       font-size: 4rem;
       line-height: 4rem;
@@ -152,6 +157,10 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 1000px) {
+   .nav {
+      gap: 4rem;
+   }
+
    .hero-titel {
       font-size: 6rem;
       line-height: 6.5rem;
