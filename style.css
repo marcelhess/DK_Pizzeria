@@ -1,7 +1,3 @@
-.platzhalter {
-   height: 300vh;
-}
-
 /*Schriftarten DSGVO-konform lokal einbinden*/
 @font-face {
    font-family: "Inter";
@@ -20,6 +16,7 @@
    --color-untertitel: #ddd;
    --cta-color: #ff3030;
    --hero-background: url(./img/hero.jpg);
+   --oeffnungszeiten-background: url(./img/hintergrund-oeffnungszeiten.jpg);
 }
 
 /*Für das ganze Dokument Margin und Padding auf 0 stellen*/
@@ -144,7 +141,7 @@ body {
 /*Für alle Sektionen unterhalb der Hero-Section*/
 .main-container {
    max-width: 85%;
-   margin: 0 auto;
+   margin: 4rem auto;
 }
 
 /*Über uns*/
@@ -196,6 +193,101 @@ body {
    flex-direction: column;
 }
 
+/*Öffnungszeiten*/
+.oeffnungszeiten {
+   position: relative; /*warten: wird ev. gelöscht*/
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   text-align: center;
+   background-image: var(--oeffnungszeiten-background);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+/*Overlay über das Hintergrundbild*/
+.oeffnungszeiten::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   z-index: 1;
+}
+
+.oeffnungszeiten * {
+   position: relative;
+   z-index: 2;
+}
+
+.h2-oeffnungszeiten {
+   font-family: "Inter", sans-serif;
+   width: fit-content;
+   margin: 2rem 0 1rem 0;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+   text-decoration-line: underline;
+   text-underline-offset: 0.5rem;
+   text-decoration-thickness: 0.1rem;
+   text-decoration-color: var(--cta-color);
+}
+
+table {
+   font-family: "Inter", sans-serif;
+   width: 18%;
+   border-collapse: collapse;
+   margin: 2rem auto;
+}
+
+td {
+   padding: 5px;
+}
+
+td:first-child {
+   text-align: left;
+   color: var(--color-untertitel);
+}
+
+td:last-child {
+   text-align: right;
+}
+
+/*Kontakt*/
+
+/*Footer*/
+footer {
+   display: flex;
+   justify-content: center;
+   gap: 2rem;
+   padding: 2rem;
+}
+
+footer a {
+   font-family: "Inter", sans-serif;
+   color: var(--color-untertitel);
+   text-decoration: none;
+   text-transform: uppercase;
+}
+
+footer a:hover {
+   color: var(--cta-color);
+   transition: 0.2s ease-in-out;
+}
+
+/*Copyright*/
+.copyright {
+   font-family: "Inter", sans-serif;
+   text-align: center;
+   margin: 2rem auto;
+   font-size: 0.8rem;
+   color: var(--color-untertitel);
+}
+
 /*Media-Queries*/
 @media only screen and (min-width: 600px) {
    .nav {
@@ -212,7 +304,8 @@ body {
    .button {
       padding: 1.2rem 2.5rem;
    }
-   .ueberuns-text {
+   .ueberuns-text,
+   table {
       font-size: 1rem;
    }
 }
@@ -230,12 +323,16 @@ body {
       margin-top: 6rem;
       align-items: center;
    }
-   .h2-ueberuns {
+   .h2-ueberuns,
+   .h2-oeffnungszeiten {
       font-size: 2rem;
    }
    .img-links,
    .img-rechts {
       gap: 1rem;
+   }
+   table {
+      font-size: 1.2rem;
    }
 }
 
