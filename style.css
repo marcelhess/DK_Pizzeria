@@ -44,6 +44,17 @@ body {
    color: #fff;
 }
 
+.h2-heading {
+   width: fit-content;
+   margin: 2rem 0 1rem 0;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+   text-decoration-line: underline;
+   text-underline-offset: 0.5rem;
+   text-decoration-thickness: 0.1rem;
+   text-decoration-color: var(--cta-color);
+}
+
 /*Navigation*/
 .nav {
    height: 8vh;
@@ -116,10 +127,6 @@ body {
    margin-bottom: 20px;
 }
 
-.hero-cta {
-   margin-top: 4rem;
-}
-
 .button,
 .button-inverted {
    width: fit-content;
@@ -158,17 +165,6 @@ body {
 .ueberuns {
    display: grid;
    gap: 2rem;
-}
-
-.h2-ueberuns {
-   width: fit-content;
-   margin: 2rem 0 1rem 0;
-   text-transform: uppercase;
-   letter-spacing: 0.1rem;
-   text-decoration-line: underline;
-   text-underline-offset: 0.5rem;
-   text-decoration-thickness: 0.1rem;
-   text-decoration-color: var(--cta-color);
 }
 
 .ueberuns-text {
@@ -233,17 +229,6 @@ body {
    z-index: 2;
 }
 
-.h2-oeffnungszeiten {
-   width: fit-content;
-   margin: 2rem 0 1rem 0;
-   text-transform: uppercase;
-   letter-spacing: 0.1rem;
-   text-decoration-line: underline;
-   text-underline-offset: 0.5rem;
-   text-decoration-thickness: 0.1rem;
-   text-decoration-color: var(--cta-color);
-}
-
 table {
    width: 18%;
    border-collapse: collapse;
@@ -274,34 +259,14 @@ td:last-child {
    width: 100;
 }
 
-.h2-kontakt {
-   width: fit-content;
-   margin: 0 0 1rem 0;
-   text-transform: uppercase;
-   letter-spacing: 0.1rem;
-   text-decoration-line: underline;
-   text-underline-offset: 0.5rem;
-   text-decoration-thickness: 0.1rem;
-   text-decoration-color: var(--cta-color);
-}
-
 .kontakt-angaben {
    width: 50%;
    margin-top: 0.5rem;
    color: var(--color-untertitel);
 }
 
-.kontakt-angaben .button {
+.kontakt-angaben .button .button-inverted {
    margin-top: 2rem;
-   display: flex;
-   flex-direction: column;
-   gap: 1rem;
-}
-
-.kontakt-angaben .button-inverted {
-   margin-top: 2rem;
-   display: flex;
-   flex-direction: column;
    gap: 1rem;
 }
 
@@ -375,8 +340,7 @@ footer a:hover {
       margin-top: 6rem;
       align-items: center;
    }
-   .h2-ueberuns,
-   .h2-oeffnungszeiten {
+   .h2-heading {
       font-size: 2rem;
    }
    .img-links,
@@ -386,7 +350,7 @@ footer a:hover {
    table {
       font-size: 1.2rem;
    }
-   .h2-kontakt{
+   .kontakt{
       margin-bottom: 2rem;
    }
    .kontakt-angaben{
@@ -396,7 +360,7 @@ footer a:hover {
    .contact-content img {
       width: 50%;
    }
-   .kontakt-buttons{
+   .kontakt .kontakt-button a {
       flex-direction: row;
    }
 }
