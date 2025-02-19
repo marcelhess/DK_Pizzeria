@@ -66,7 +66,8 @@ body {
    text-align: center;
 }
 
-.nav a {
+.nav a,
+.footer-item {
    height: 100%;
    padding: 0 20px;
    display: flex;
@@ -77,14 +78,15 @@ body {
    color: #fff;
 }
 
-.nav a:hover {
+.nav a:hover,
+.footer-item:hover {
    color: var(--cta-color);
    transition: 0.2s ease-in-out;
 }
 
 /*Für die Hero-Section die Elemente zentrieren*/
 .hero {
-   position: relative; /*warten: wird ev. gelöscht*/
+   position: relative;
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -271,35 +273,38 @@ td:last-child {
 }
 
 /*Footer*/
-footer {
+.footer {
    display: flex;
+   flex-direction: column;
    justify-content: center;
-   gap: 2rem;
-   padding: 2rem;
-}
-
-footer a {
-   color: var(--color-untertitel);
-   text-decoration: none;
-   text-transform: uppercase;
-}
-
-footer a:hover {
-   color: var(--cta-color);
-   transition: 0.2s ease-in-out;
-}
-
-/*Copyright*/
-.copyright {
-   text-align: center;
-   margin: 2rem auto;
+   align-items: center;
    font-size: 0.8rem;
+   text-align: center;
+   gap: 1rem;
+   margin-top: 2rem;
+   padding: 2rem 1rem;
+   background-color: #303030;
+}
+
+.footer-links {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+   letter-spacing: 0.1rem;
+}
+
+.copyright {
+   font-size: 0.7rem;
    color: var(--color-untertitel);
+   margin-top: 1rem;
 }
 
 /*Media-Queries*/
 @media only screen and (min-width: 600px) {
-   .nav {
+   .nav,
+   .footer-links {
       gap: 2rem;
       font-size: 1rem;
    }
@@ -325,10 +330,18 @@ footer a:hover {
    .contact-img {
       width: 60%;
    }
+   .footer {
+      margin: 4rem auto;
+      padding: 3rem 0;
+      gap: 3rem;
+   }
+   .footer-links {
+      flex-direction: row;
+   }
 }
 
 @media only screen and (min-width: 1000px) {
-   .nav {
+   .nav, .footer-links {
       gap: 4rem;
    }
    .hero-titel {
@@ -350,10 +363,10 @@ footer a:hover {
    table {
       font-size: 1.2rem;
    }
-   .kontakt{
+   .kontakt {
       margin-bottom: 2rem;
    }
-   .kontakt-angaben{
+   .kontakt-angaben {
       margin-top: 1rem;
       font-size: 1.2rem;
    }
@@ -362,6 +375,9 @@ footer a:hover {
    }
    .kontakt .kontakt-button a {
       flex-direction: row;
+   }
+   .footer {
+      margin-top: 6rem;
    }
 }
 
