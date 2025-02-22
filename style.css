@@ -2,21 +2,29 @@
 @font-face {
    font-family: "Inter";
    src: url("../fonts/Inter/Inter-VariableFont_opsz,wght.ttf")
-      format("truetype");
+         format("truetype"),
+      url("../fonts/Inter/Inter-VariableFont_opsz,wght.woff2") format("woff2"),
+      url("../fonts/Inter/Inter-VariableFont_opsz,wght.woff") format("woff");
 }
 
 @font-face {
    font-family: "Lobster";
-   src: url("../fonts/Lobster/Lobster-Regular.ttf") format("truetype");
+   src: url("../fonts/Lobster/Lobster-Regular.ttf") format("truetype"),
+      url("../fonts/Lobster/Lobster-Regular.woff2") format("woff2"),
+      url("../fonts/Lobster/Lobster-Regular.woff") format("woff");
 }
 
 /*Root-Element für globale Variablen*/
 :root {
    --font-size: 1rem;
+   --font-size-large: 1.5rem;
+   --font-size-xlarge: 2rem;
    --color-untertitel: #ddd;
-   --cta-color: #ff3030;
+   --cta-color: #cd293a; /*Pantone Tomato Red*/
    --hero-background: url(./img/hero.jpg);
    --oeffnungszeiten-background: url(./img/hintergrund-oeffnungszeiten.jpg);
+   --background-color: #1a1a1a;
+   --text-color: #fff;
 }
 
 /*Für das ganze Dokument Margin und Padding auf 0 stellen*/
@@ -40,8 +48,8 @@ html {
 }
 
 body {
-   background-color: #1a1a1a;
-   color: #fff;
+   background-color: var(--background-color);
+   color: var(--text-color);
 }
 
 .h2-heading {
@@ -59,7 +67,7 @@ body {
 .nav {
    height: 8vh;
    font-size: 0.8rem;
-   background-color: #1a1a1a;
+   background-color: var(--background-color);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -75,7 +83,7 @@ body {
    letter-spacing: 0.1rem;
    text-decoration: none;
    text-transform: uppercase;
-   color: #fff;
+   color: var(--text-color);
 }
 
 .nav a:hover,
@@ -118,7 +126,7 @@ body {
 
 .hero-titel {
    font-family: "Lobster", sans-serif;
-   color: white;
+   color: var(--text-color);
    font-size: 3rem;
    line-height: 3rem;
    margin-bottom: 1rem;
@@ -136,7 +144,7 @@ body {
    padding: 1rem 2rem;
    border: 1px solid var(--cta-color);
    text-decoration: none;
-   color: #fff;
+   color: var(--text-color);
    background: var(--cta-color);
    transition: background 0.2s ease-in-out, color 0.2s ease-in-out,
       border 0.2s ease-in-out;
@@ -154,7 +162,7 @@ body {
 
 .button-inverted:hover {
    background: var(--cta-color);
-   color: #fff;
+   color: var(--text-color);
 }
 
 /*Für alle Sektionen unterhalb der Hero-Section*/
@@ -251,14 +259,14 @@ td:last-child {
 }
 
 /*Kontakt*/
-.contact-content {
+.kontakt-content {
    display: flex;
    flex-direction: column;
    gap: 2rem;
 }
 
-.contact-img {
-   width: 100;
+.kontakt-img {
+   width: 100%;
 }
 
 .kontakt-angaben {
@@ -297,7 +305,7 @@ td:last-child {
 
 .copyright {
    font-size: 0.7rem;
-   color: var(--color-untertitel);
+   color: var(--cta-color);
    margin-top: 1rem;
 }
 
@@ -315,23 +323,24 @@ td:last-child {
    .hero-untertitel {
       font-size: 1.5rem;
    }
-   .button .button-inverted {
+   .button,
+   .button-inverted {
       padding: 1.2rem 2.5rem;
    }
    .ueberuns-text,
    table {
       font-size: 1rem;
    }
-   .contact-content {
+   .kontakt-content {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
    }
-   .contact-img {
+   .kontakt-img {
       width: 60%;
    }
    .footer {
-      margin: 4rem auto;
+      margin: 4rem auto 0 auto;
       padding: 3rem 0;
       gap: 3rem;
    }
@@ -341,7 +350,8 @@ td:last-child {
 }
 
 @media only screen and (min-width: 1000px) {
-   .nav, .footer-links {
+   .nav,
+   .footer-links {
       gap: 4rem;
    }
    .hero-titel {
@@ -370,10 +380,11 @@ td:last-child {
       margin-top: 1rem;
       font-size: 1.2rem;
    }
-   .contact-content img {
+   .kontakt-content img {
       width: 50%;
    }
-   .kontakt .kontakt-button a {
+   .kontakt,
+   .kontakt-button a {
       flex-direction: row;
    }
    .footer {
