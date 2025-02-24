@@ -20,7 +20,7 @@
    --font-size-large: 1.5rem;
    --font-size-xlarge: 2rem;
    --color-untertitel: #ddd;
-   --cta-color: #0d5eaf; /*Pantone Tomato Red*/
+   --cta-color: #cd293a; /*Pantone Tomato Red*/
    --hero-background: url(./img/hero.jpg);
    --oeffnungszeiten-background: url(./img/hintergrund-oeffnungszeiten.jpg);
    --background-color: #1a1a1a;
@@ -194,6 +194,7 @@ body {
 
 .ueberuns-img {
    width: 100%;
+   height: 100%;
    object-fit: cover;
 }
 
