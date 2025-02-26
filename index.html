@@ -5,121 +5,168 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Pizzeria Mamma Mia</title>
       <link rel="stylesheet" href="style.css" />
-      <link rel="icon" type="image/png" href="./img/favicons/favicon-32x32.png" sizes="32x32" />
-      <link rel="icon" type="image/png" href="./img/favicons/favicon-16x16.png" sizes="16x16" />
+      <link
+         rel="icon"
+         type="image/png"
+         href="./img/favicons/favicon-32x32.png"
+         sizes="32x32" />
+      <link
+         rel="icon"
+         type="image/png"
+         href="./img/favicons/favicon-16x16.png"
+         sizes="16x16" />
    </head>
    <body>
       <!--Navigation-->
       <nav class="nav">
-          <a href="#ueberuns" title="Mehr über uns erfahren">Über uns</a>
-          <a href="#speisekarte" title="Unsere Speisekarte ansehen">Speise<wbr>karte</a>
-          <a href="#oeffnungszeiten" title="Unsere Öffnungszeiten ansehen">Öffnungs<wbr>zeiten</a>
-         </div>
+         <a href="#about" title="Mehr über uns erfahren">Über uns</a>
+         <a href="menu.html" title="Unsere Speisekarte ansehen" target="_blank"
+            >Speise<wbr />karte</a
+         >
+         <a href="#info" title="Unsere Öffnungszeiten ansehen"
+            >Öffnungs<wbr />zeiten</a
+         >
       </nav>
       <!--Hero-Section-->
       <section class="hero">
-         <h1 class="hero-titel">Pizzeria<br />Mamma Mia</h1>
-         <p class="hero-untertitel">
+         <h1 class="hero-title">Pizzeria<br />Mamma Mia</h1>
+         <p class="hero-sub-title">
             Original italienische Küche aus der Toskana
          </p>
          <!--Den "Button" mit einem Tooltip versehen; für Besucher mit Sehbeeinträchtigung und für Suchmaschinen-->
          <a
             class="hero-cta button"
             title="Unsere Öffnungszeiten ansehen"
-            href="#oeffnungszeiten"
+            href="#opening-hours"
             >Öffnungszeiten ansehen</a
          >
       </section>
       <!--Über uns-Section -->
-      <section id="ueberuns" class="ueberuns main-container">
+      <section id="about" class="about main-container">
          <div>
-            <h2 class="h2-heading ueberuns">Über uns</h2>
-            <p class="ueberuns-text">
-               Die Pizzeria Mamma Mia ist ein Familienbetrieb im Zentrum von Zürich. Seit 1999 bieten wir Ihnen original italienische Küche aus der Toskana. Alle unsere Gerichte werden täglich mit den frischesten Zutaten zubereitet - ein wahrer Genuss für Auge und Gaumen!
-               <br><br>
+            <h2 class="heading about">Über uns</h2>
+            <p class="about-text">
+               Die Pizzeria Mamma Mia ist ein Familienbetrieb im Zentrum von
+               Zürich. Seit 1999 bieten wir Ihnen original italienische Küche
+               aus der Toskana. Alle unsere Gerichte werden täglich mit den
+               frischesten Zutaten zubereitet - ein wahrer Genuss für Auge und
+               Gaumen!
+               <br /><br />
                Wir legen großen Wert auf die Qualität unserer Zutaten und
-               verwenden ausschließlich die besten Produkte aus der Region und aus der Toskana. Lassen Sie sich von uns verwöhnen und genießen Sie ein Stück Italien im Stadtzentrum von Zürich.
+               verwenden ausschließlich die besten Produkte aus der Region und
+               aus der Toskana. Lassen Sie sich von uns verwöhnen und genießen
+               Sie ein Stück Italien im Stadtzentrum von Zürich.
             </p>
             <a
                class="hero-cta button"
                title="Unsere Speisekarte ansehen"
-               href="#">Zur Speisekarte</a
-               >
+               href="menu.html"
+               target="_blank"
+               >Zur Speisekarte</a
+            >
          </div>
-         <div class="container-rechts">
-            <img class="ueberuns-img img-links" src="./img/about-1.jpg" title="Pizzeria Mamma Mia" alt="Eingang zu der Pizzeria Mamma Mia" />
-               <div class="img-rechts">
-                  <img class="ueberuns-img" src="./img/about-2.jpg" title="Gäste in der Pizzeria Mamma Mia" alt="Gäste in der Pizzeria Mamma Mia" />
-                  <img class="ueberuns-img" src="./img/about-3.jpg" title="Frisch gebackene Pizza von der Pizzeria Mamma Mia" alt="Frisch gebackene Pizza von der Pizzeria Mamma Mia" />
+         <div class="container-right">
+            <img
+               class="about-img img-left"
+               src="./img/about-1.jpg"
+               title="Pizzeria Mamma Mia"
+               alt="Eingang zu der Pizzeria Mamma Mia" />
+            <div class="img-right">
+               <img
+                  class="about-img"
+                  src="./img/about-2.jpg"
+                  title="Gäste in der Pizzeria Mamma Mia"
+                  alt="Gäste in der Pizzeria Mamma Mia" />
+               <img
+                  class="about-img"
+                  src="./img/about-3.jpg"
+                  title="Frisch gebackene Pizza von der Pizzeria Mamma Mia"
+                  alt="Frisch gebackene Pizza von der Pizzeria Mamma Mia" />
             </div>
          </div>
       </section>
       <!--Öffnungszeiten-Section -->
-      <section id="oeffnungszeiten" class="oeffnungszeiten">
-         <h2 class="h2-heading">Öffnungszeiten</h2>
-         <table>
-            <tr>
-                <td>Mo.</td>
-                <td>Ruhetag</td>
-            </tr>
-            <tr>
-                <td>Di.</td>
-                <td>11:00-23:00</td>
-            </tr>
-            <tr>
-                <td>Mi.</td>
-                <td>11:00-23:00</td>
-            </tr>
-            <tr>
-                <td>Do.</td>
-                <td>11:00-23:00</td>
-            </tr>
-            <tr>
-                <td>Fr.</td>
-                <td>11:00-02:00</td>
-            </tr>
-            <tr>
-                <td>Sa.</td>
-                <td>11:00-03:00</td>
-            </tr>
-            <tr>
-                <td>So.</td>
-                <td>11:00-23:00</td>
-            </tr>
-        </table>
+      <section id="info" class="info-wrapper">
+         <div class="info container">
+            <h2 class="heading">Öffnungszeiten</h2>
+            <div class="hours">
+               <p class="hours-entry">
+                  <span class="days">Mo.</span><span class="time">Ruhetag</span>
+               </p>
+               <p class="hours-entry">
+                  <span class="days">Di.</span
+                  ><span class="time">11:00-23:00</span>
+               </p>
+               <p class="hours-entry">
+                  <span class="days">Mi.</span
+                  ><span class="time">11:00-23:00</span>
+               </p>
+               <p class="hours-entry">
+                  <span class="days">Do.</span
+                  ><span class="time">11:00-23:00</span>
+               </p>
+               <p class="hours-entry">
+                  <span class="days">Fr.</span
+                  ><span class="time">11:00-01:00</span>
+               </p>
+               <p class="hours-entry">
+                  <span class="days">Sa.</span
+                  ><span class="time">11:00-01:00</span>
+               </p>
+               <p class="hours-entry">
+                  <span class="days">So.</span
+                  ><span class="time">11:00-23:00</span>
+               </p>
+            </div>
+         </div>
       </section>
       <!--Kontakt-Section-->
-      <section id="kontakt" class="kontakt main-container">
-         <div class="kontakt-content">
-            <img class="kontakt-img" src="./img/contact.jpg" title="Gäste in der Pizzeria Mamma Mia" alt="Glückliche Gäste in der Pizzeria Mamma Mia">
-               <div class="kontakt-angaben">
-                  <h2 class="h2-heading kontakt">Kontakt</h2>
-
-                  <!--Verwendung von Mikroformat und Mikrodaten für die SEO-->
-                     <address itemscope itemtype="http://schema.org/PostalAddress">
-                        <span itemprop="telephone">(0) 123 456 78 90</span><br>
-                        <span itemprop="email">delizioso@mamma-mia.ch</span><br>
-                        <span itemprop="streetAddress">Pizzastrasse 1</span><br>
-                        <span itemprop="postalCode">CH-8001</span><span itemprop="addressLocation">&nbsp;Zürich</span><br>
-                        <span itemprop="addressCountry">Schweiz</span>
-                     </address>
-                        <div class="kontakt-button">
-                           <a class="button" href="tel:01234567890" title="Pizzeria Mamma Mia anrufen">Jetzt anrufen!</a>
-                           <a class="button-inverted" href="mailto:deliziso@mamma-mia.ch" title="E-Mail an Pizzeria Mamma Mia senden">E-Mail schreiben</a>
-                        </div>
+      <section id="contact" class="contact main-container">
+         <div class="contact-content">
+            <img
+               class="contact-img"
+               src="./img/contact.jpg"
+               title="Gäste in der Pizzeria Mamma Mia"
+               alt="Glückliche Gäste in der Pizzeria Mamma Mia" />
+            <div class="contact-detail">
+               <h2 class="heading">Kontakt</h2>
+               <address itemscope itemtype="http://schema.org/PostalAddress">
+                  <span itemprop="telephone">(0) 123 456 78 90</span><br />
+                  <span itemprop="email">delizioso@mamma-mia.ch</span><br />
+                  <span itemprop="streetAddress">Pizzastrasse 1</span><br />
+                  <span itemprop="postalCode">CH-8001</span
+                  ><span itemprop="addressLocation">&nbsp;Zürich</span><br />
+                  <span itemprop="addressCountry">Schweiz</span>
+               </address>
+               <div class="contact-actions">
+                  <a
+                     class="button"
+                     href="tel:01234567890"
+                     title="Pizzeria Mamma Mia anrufen"
+                     >Jetzt anrufen!</a
+                  >
+                  <a
+                     class="button-inverted"
+                     href="mailto:deliziso@mamma-mia.ch"
+                     title="E-Mail an Pizzeria Mamma Mia senden"
+                     >E-Mail schreiben</a
+                  >
                </div>
-      </div>
+            </div>
+         </div>
       </section>
       <!--Footer-->
       <footer class="footer">
-         <div class="footer-links">
-            <a href="#" class="footer-item" title="Impressum ansehen">Impressum</a>
-            <a href="#" class="footer-item" title="Datenschutzerklärung ansehen">Datenschutzerklärung</a>
+         <div class="footer-left">
+            <a href="#" class="footer-item" title="Impressum ansehen"
+               >Impressum</a
+            >
+            <a href="#" class="footer-item" title="Datenschutzerklärung ansehen"
+               >Datenschutzerklärung</a
+            >
             <a href="#" class="footer-item" title="Jobs ansehen">Jobs</a>
          </div>
-         <p class="copyright" title="© 2025 MH">
-            &copy; 2025 MH
-         </p>
+         <p class="copyright" title="© 2025 MH">&copy; 2025 MH</p>
       </footer>
    </body>
 </html>

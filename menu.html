@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="de">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Pizzeria Mamma Mia</title>
+      <link rel="stylesheet" href="style.css" />
+      <link
+         rel="icon"
+         type="image/png"
+         href="./img/favicons/favicon-32x32.png"
+         sizes="32x32" />
+      <link
+         rel="icon"
+         type="image/png"
+         href="./img/favicons/favicon-16x16.png"
+         sizes="16x16" />
+   </head>
+   <body>
+      <!--Navigation-->
+      <nav class="nav">
+         <a href="index.html" title="Zurück auf die Homepage">Home</a>
+         <a href="#about" title="Mehr über uns erfahren">Über uns</a>
+         <a href="menu.html" title="Unsere Speisekarte ansehen" target="_blank"
+            >Speise<wbr />karte</a
+         >
+         <a href="#opening-hours" title="Unsere Öffnungszeiten ansehen"
+            >Öffnungs<wbr />zeiten</a
+         >
+      </nav>
+      <!--Menu-Section-->
+      <section class="menu">
+         <section class="container" id="pizze">
+            <h2 class="menu">PIZZE</h2>
+            <p class="description">
+               Den Teig für unsere Pizze stellen wir täglich selbst her, mit
+               Schweizer Mehl, belegt wird klassisch italienisch: mit
+               Tomatensauce und Fior di Latte-Mozzarella.
+            </p>
+
+            <div class="menu-items">
+               <article class="menu-item">
+                  <h3>Carbonara bianca</h3>
+                  <p class="ingredients">
+                     Mozzarella, Eigelb, Guanciale, Pecorino Romano dop, Pfeffer
+                  </p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Napoli</h3>
+                  <p class="ingredients">Kapern, Sardellen</p>
+                  <p class="price">19</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Gran gusto</h3>
+                  <p class="ingredients">
+                     Gorgonzola, Champignons, Hinterschinken, Spiegelei
+                  </p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Verdure</h3>
+                  <p class="ingredients">
+                     Peperoni, Zucchini, Auberginen, Spinat, Datteltomaten
+                  </p>
+                  <p class="price">22</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Margherita</h3>
+                  <p class="ingredients">Basilikum</p>
+                  <p class="price">18</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Padrone</h3>
+                  <p class="ingredients">
+                     Kalbfleisch, Peperoncini, rote Zwiebeln
+                  </p>
+                  <p class="price">27</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Tonno</h3>
+                  <p class="ingredients">
+                     Thon, rote Zwiebeln, Kapern, Estragon
+                  </p>
+                  <p class="price">23</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Quattro formaggi</h3>
+                  <p class="ingredients">
+                     Gorgonzola, Taleggio, Bassanese, Oregano
+                  </p>
+                  <p class="price">24</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Frutti di mare</h3>
+                  <p class="ingredients">
+                     Mies- & Venusmuscheln, Riesencrevetten, Tomaten, Knoblauch,
+                     Petersilie
+                  </p>
+                  <p class="price">29</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Prosciutto e funghi</h3>
+                  <p class="ingredients">
+                     Hinterschinken, Champignons, Oregano
+                  </p>
+                  <p class="price">24</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Toscana</h3>
+                  <p class="ingredients">Pikante Salami</p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Quattro stagioni</h3>
+                  <p class="ingredients">
+                     Artischocken, Peperoni, Champignons, Hinterschinken,
+                     Oliven, Oregano
+                  </p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Santa Lucia</h3>
+                  <p class="ingredients">
+                     Hinterschinken, Champignons, Sardellen, Peperoni, Oregano
+                  </p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Michelangelo</h3>
+                  <p class="ingredients">
+                     Mascarpone, Parmaschinken (20 mesi), Rucola,
+                     Mozzarella-Perlen, Datteltomaten
+                  </p>
+                  <p class="price">28</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Bufalina</h3>
+                  <p class="ingredients">
+                     Büffelmozzarella, Datteltomaten, Pesto, Basilikum
+                  </p>
+                  <p class="price">26</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Parmigiana</h3>
+                  <p class="ingredients">
+                     Rucola, Parmaschinken (20 mesi), Parmesan (30 mesi)
+                  </p>
+                  <p class="price">26</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Calzone</h3>
+                  <p class="ingredients">Hinterschinken, Freilandei, Pesto</p>
+                  <p class="price">23</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Burrata</h3>
+                  <p class="ingredients">Burrata, Datteltomaten, Basilikum</p>
+                  <p class="price">26</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Santa Cristina</h3>
+                  <p class="ingredients">
+                     Schwarze Oliven, rote Zwiebelringe, Mozzarella-Perlen
+                  </p>
+                  <p class="price">21</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Prosciutto</h3>
+                  <p class="ingredients">Hinterschinken, Thymian</p>
+                  <p class="price">23</p>
+               </article>
+
+               <article class="menu-item vegan">
+                  <h3>Quattro stagioni planted.</h3>
+                  <p class="ingredients">
+                     Artischocken, Peperoni, Champignons, planted.pulled,
+                     Oliven, Oregano
+                  </p>
+                  <p class="price">23</p>
+               </article>
+            </div>
+
+            <div class="special-info">
+               <h4>LA STORIA DELLA PIZZA</h4>
+               <p>
+                  Im quirligen Napoli vor mehr als 300 Jahren geboren. Hat die
+                  Pizza mittlerweile Liebhaber in der ganzen Welt. Seit 1965 in
+                  unseren Santa Lucias die Nr. 1. Knusprig und in immer
+                  gleichbleibender Qualität. Für Sie jeweils frisch gebacken –
+                  im lodernden Buchenholz-befeuerten Ofen.
+               </p>
+            </div>
+         </section>
+
+         <!-- PASTA RIPIENA Sektion -->
+         <section class="container" id="pasta-ripiena">
+            <h2>PASTA RIPIENA</h2>
+
+            <div class="menu-items">
+               <article class="menu-item">
+                  <h3>Lasagne al forno</h3>
+                  <p class="ingredients">Hausgemachte Rindfleischlasagne</p>
+                  <p class="price">28</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Tortellini all'Alfredo</h3>
+                  <p class="ingredients">
+                     Rohschinken-Tortellini, Hinterschinken, Rahm
+                  </p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Ravioli alla carbonara</h3>
+                  <p class="ingredients">
+                     Carbonara-Ravioli, Speck, Parmesan (30 mesi), Pfeffer
+                  </p>
+                  <p class="price">24</p>
+               </article>
+            </div>
+         </section>
+
+         <!-- LA NOSTRA PASTA Sektion -->
+         <section class="container" id="la-nostra-pasta">
+            <h2>LA NOSTRA PASTA</h2>
+
+            <div class="menu-items">
+               <article class="menu-item">
+                  <h3>Carbonara</h3>
+                  <p class="ingredients">Speck, Eigelb, Rahm, Grana Padano</p>
+                  <p class="price">24</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Santa Lucia</h3>
+                  <p class="ingredients">
+                     Kalbfleisch, Peperonata, Peperoncini, Rahm
+                  </p>
+                  <p class="price">27</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Bolognese</h3>
+                  <p class="ingredients">Tomaten, Rindfleisch</p>
+                  <p class="price">24</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Santa Chiara</h3>
+                  <p class="ingredients">Tomaten, Rindfleisch, Rahm</p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Burrata</h3>
+                  <p class="ingredients">Burrata, Datteltomaten, Basilikum</p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item vegan">
+                  <h3>Contadina</h3>
+                  <p class="ingredients">
+                     Frühlingszwiebeln, Datteltomaten, Oliven, planted.pulled
+                  </p>
+                  <p class="price">23</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Amatriciana classica</h3>
+                  <p class="ingredients">
+                     Tomaten, Guanciale, Peperoncini, Zwiebeln, Pecorino Romano
+                     dop
+                  </p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item vegan">
+                  <h3>Arrabbiata</h3>
+                  <p class="ingredients">Tomaten, Peperoncini, Knoblauch</p>
+                  <p class="price">21</p>
+               </article>
+
+               <article class="menu-item vegan">
+                  <h3>Napoli</h3>
+                  <p class="ingredients">Tomaten, Basilikum</p>
+                  <p class="price">19</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Salmone</h3>
+                  <p class="ingredients">Rauchlachs, Dill, Rahm</p>
+                  <p class="price">25</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Pesto genovese</h3>
+                  <p class="ingredients">
+                     Basilikum, Grana Padano, Olivenöl, Pinienkerne
+                  </p>
+                  <p class="price">21</p>
+               </article>
+
+               <article class="menu-item vegan">
+                  <h3>Aglio, olio e peperoncino</h3>
+                  <p class="ingredients">Knoblauch, Olivenöl, Peperoncini</p>
+                  <p class="price">18</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Frutti di mare</h3>
+                  <p class="ingredients">
+                     Mies- & Venusmuscheln, Riesencrevetten, Tomaten, Knoblauch,
+                     Petersilie
+                  </p>
+                  <p class="price">29</p>
+               </article>
+
+               <article class="menu-item">
+                  <h3>Gamberoni</h3>
+                  <p class="ingredients">
+                     Riesencrevetten, Tomaten, Peperoncini
+                  </p>
+                  <p class="price">29</p>
+               </article>
+
+               <article class="menu-item vegetarian">
+                  <h3>Melanzane</h3>
+                  <p class="ingredients">
+                     Tomaten, Auberginen, Basilikum, Grana Padano
+                  </p>
+                  <p class="price">23</p>
+               </article>
+            </div>
+
+            <div class="pasta-types">
+               <h4>Pasta-Varianten zur Auswahl:</h4>
+               <ul>
+                  <li class="vegetarian">Rigatoni – all'uovo, fatti in casa</li>
+                  <li class="vegetarian">
+                     Tagliatelle – all'uovo, fatte in casa
+                  </li>
+                  <li class="vegan">Fusilli giganti – De Cecco</li>
+                  <li class="vegan">Spaghetti e Penne – De Cecco</li>
+                  <li class="vegetarian">Gnocchi</li>
+               </ul>
+               <p>
+                  Auf Wunsch servieren wir Ihnen gerne glutenfreie Spaghetti.
+               </p>
+            </div>
+            <div class="legend">
+               <p>V: vegetarisch</p>
+               <p>V+: vegan</p>
+               <p>Preise in CHF inkl. MwSt.</p>
+            </div>
+            <p class="allergens">
+               Für Informationen zu Allergenen in den einzelnen Gerichten wenden
+               Sie sich bitte an unsere Mitarbeitenden.
+            </p>
+         </section>
+      </section>
+      <!--Footer-->
+      <footer class="footer">
+         <div class="footer-left">
+            <a href="#" class="footer-item" title="Impressum ansehen"
+               >Impressum</a
+            >
+            <a href="#" class="footer-item" title="Datenschutzerklärung ansehen"
+               >Datenschutzerklärung</a
+            >
+            <a href="#" class="footer-item" title="Jobs ansehen">Jobs</a>
+         </div>
+         <p class="copyright" title="© 2025 MH">&copy; 2025 MH</p>
+      </footer>
+   </body>
+</html>
